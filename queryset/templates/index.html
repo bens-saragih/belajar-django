@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{judul}}</title>
+</head>
+<body>
+	<ul>
+		<li><a href="/blog/">blog</a></li>
+		<li><a href="/blog/berita">berita</a></li>
+		<li><a href="/blog/gosip">gosip</a></li>
+		<li><a href="/blog/jurnal">jurnal</a></li>
+	</ul>
+	<h2>{{judul}} | {{heading}}</h2>
+	{% for post in Posts %}
+	<h3>{{post.judul}}</h3>
+	<h4>{{post.waktuposting}}</h4>
+	<P>{{post.body}}</P>
+	<p>category:{{post.category}}</p>
+	<br>
+	{% endfor %}
+</body>
+</html>

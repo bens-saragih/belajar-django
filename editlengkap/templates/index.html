@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{judulatas}} | {{subjudul}}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static app_css %}">
+	<link rel="stylesheet" type="text/css" href="{% static bebas_regis %}">
+</head>
+<body>
+	<h2>{{selamatdatang}}</h2>
+	<img id='banner'src="{% static banner %}">
+
+	<nav>
+		<ul>
+			{% for link,name in nav %}
+			<li><a href="{{link}}">{{name}}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+	<div class="kotak_login">
+		<p class="tulisan_login">Silahkan login</p>
+
+		<form>
+			<label>Username</label>
+			<input type="text" name="username" class="form_login" placeholder="Username atau email ..">
+
+			<label>Password</label>
+			<input type="text" name="password" class="form_login" placeholder="Password ..">
+
+			<input type="submit" class="tombol_login" value="LOGIN">
+
+			<br/>
+			<br/>
+
+		</form>
+	
+	</div>
+		<h3>Register</h3>
+	<h3>{{daftar}}</h3>
+	<div class='kotak_register'>
+		<p class='tulisan_register'>Silakan Register</p>
+				<form>
+			<label>Username</label>
+			<input type="text" name="username" class="form_login" placeholder="Username atau email ..">
+
+			<label>Password</label>
+			<input type="text" name="text" class="form_login" placeholder="Email ..">
+
+			<input type="submit" class="tombol_register" value="LOGIN">
+
+			<br/>
+			<br/>
+
+		</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{judul}}</title>
+</head>
+<body>
+<h5>{{heading}}</h5>
+	{% for Post in posts %}
+	<h2>{{Post.judul}}</h2>
+	<p>{{Post.body}}</p>
+	{% endfor %}
+</body>
+</html>

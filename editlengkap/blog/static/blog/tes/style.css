@@ -1,0 +1,9 @@
+.tombol_register{
+	background: #46de4b;
+	color: red;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}

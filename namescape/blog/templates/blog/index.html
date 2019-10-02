@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{judul}}</title>
+</head>
+<body>
+	<h1>{{judul}}</h1>
+	<ul>
+		<li><a href="{% url 'index' %}">Home</a></li>
+		<li><a href="{% url 'blog:index' %}">Blog</a></li> <!-- untuk mengenali bahwa dia termasuk di blog , jadi gunanya name space kita bisa pindah ke aplikasi lain misal about dan di setting di include halaman utama/project-->
+		<li><a href="{% url 'blog:category' %}">Category</a></li>
+		<li><a href="{% url 'blog:single' %}">Single</a></li>
+		<li><a href="{% url 'blog:khusus' input='ucup'%}">Khusus</a></li>
+
+	</ul>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/bootstrap.css' %}"><!-- 'vendor/bootstrap dll' tidak menggunakan variabel jadi langsung mengambil -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark " id='myNav'>
+  <a class="navbar-brand" href="#">
+  	<img style='height: 30px'src="{% static 'img/logo.png' %}">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+         <li class="nav-item">
+        <a class="nav-link" href="/blog">Blog</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+	<div class="jumbotron jumbotron-fluid">
+  <div class="container text-white text-center ">
+    <h1 class="display-4">{{hadding}}</h1>
+    <p class="lead">{{subhading}}</p>
+  </div>
+	</div>
+
+		<div class="container-fluid">
+		<div class="container bg-white text-dark shadow" style="margin-top:-100px">
+			<div class='row' style='height:400px'>
+				<h3>konten1</h3>
+			</div>
+
+		<div class="container bg-dark text-white shadow">
+			<div class="row" style="height:300px">
+				<h3>konten2</h3>
+			</div>
+			
+		</div>
+
+				<div class="container bg-white text-white shadow">
+			<div class="row" style="height:300px">
+				<h3>konten3</h3>
+			</div>
+			
+		</div>
+
+				<div class="container bg-dark text-white shadow">
+			<div class="row" style="height:300px">
+				<h3>konten4</h3>
+			</div>
+			
+		</div>
+
+			
+	</div>	
+	</div>
+	<script type="text/javascript" src="{% static 'vendor/jquery/jquery.js' %}"></script>
+	<script type="text/javascript" src="{% static 'vendor/popper/popper.js' %}"></script>
+	
+	<script type="text/javascript" src="{% static 'vendor/bootstrap/bootstrap.js' %}"></script>
+
+	<script type="text/javascript" scr="{% static 'js/scrolling.js' %}"></script>
+
+</body>
+</html>
